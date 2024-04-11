@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: echo
+  labels:
+    app: echo
+spec:
+  selector: # トラフィックを流すPodを特定するラベル
+    app: echo
+    # release: summer
+  ports:
+    - name: http
+      port: 80
