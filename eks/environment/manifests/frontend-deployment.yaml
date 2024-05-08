@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: k8s-gamo-frontend:kawauso
+          image: 960293440626.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-gamo-frontend:kawauso
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
